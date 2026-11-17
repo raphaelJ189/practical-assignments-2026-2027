@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE students [
+
+    <!-- Define the root element -->
+    <!ELEMENT students (student+)>
+
+    <!-- Define the student structure and element order -->
+    <!ELEMENT student (
+        firstName,
+        lastName,
+        gender,
+        programme,
+        yearOfStudy,
+        email,
+        phone,
+        courses
+    )>
+
+    <!-- Define student registration number attribute -->
+    <!ATTLIST student regNumber ID #REQUIRED>
+
+    <!-- Define student information elements -->
+    <!ELEMENT firstName (#PCDATA)>
+    <!ELEMENT lastName (#PCDATA)>
+    <!ELEMENT gender (#PCDATA)>
+    <!ELEMENT programme (#PCDATA)>
+    <!ELEMENT yearOfStudy (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT phone (#PCDATA)>
+
+    <!-- Define courses structure -->
+    <!ELEMENT courses (course, course, course+)>
+
+    <!-- Define individual course -->
+    <!ELEMENT course (#PCDATA)>
+
+    <!-- Define course code attribute -->
+    <!ATTLIST course code CDATA #REQUIRED>
+
+]>
+
+<students>
+
+    <student regNumber="T24-03-001">
+        <firstName>John</firstName>
+        <lastName>Michael</lastName>
+        <gender>Male</gender>
+        <programme>Bachelor of Science in Computer Science</programme>
+        <yearOfStudy>2</yearOfStudy>
+        <email>john.michael@example.com</email>
+        <phone>+255712345001</phone>
+        <courses>
+            <course code="CS201">Data Structures and Algorithms</course>
+            <course code="CS202">Database Management Systems</course>
+            <course code="CS203">Mobile Application Development</course>
+        </courses>
+    </student>
+
+    <student regNumber="T24-03-002">
+        <firstName>Mary</firstName>
+        <lastName>Joseph</lastName>
+        <gender>Female</gender>
+        <programme>Bachelor of Science in Computer Science</programme>
+        <yearOfStudy>2</yearOfStudy>
+        <email>mary.joseph@example.com</email>
+        <phone>+255712345002</phone>
+        <courses>
+            <course code="CS201">Data Structures and Algorithms</course>
+            <course code="CS204">Computer Networks</course>
+            <course code="CS205">Software Engineering</course>
+        </courses>
+    </student>
+
+    <student regNumber="T24-03-003">
+        <firstName>David</firstName>
+        <lastName>Peter</lastName>
+        <gender>Male</gender>
+        <programme>Bachelor of Science in Information Technology</programme>
+        <yearOfStudy>3</yearOfStudy>
+        <email>david.peter@example.com</email>
+        <phone>+255712345003</phone>
+        <courses>
+            <course code="IT301">Web Application Development</course>
+            <course code="IT302">Network Administration</course>
+            <course code="IT303">Information Security</course>
+        </courses>
+    </student>
+
+    <student regNumber="T24-03-004">
+        <firstName>Grace</firstName>
+        <lastName>Emmanuel</lastName>
+        <gender>Female</gender>
+        <programme>Bachelor of Science in Computer Science</programme>
+        <yearOfStudy>1</yearOfStudy>
+        <email>grace.emmanuel@example.com</email>
+        <phone>+255712345004</phone>
+        <courses>
+            <course code="CS101">Introduction to Programming</course>
+            <course code="CS102">Computer Fundamentals</course>
+            <course code="CS103">Discrete Mathematics</course>
+        </courses>
+    </student>
+
+    <student regNumber="T24-03-005">
+        <firstName>James</firstName>
+        <lastName>Daniel</lastName>
+        <gender>Male</gender>
+        <programme>Bachelor of Science in Software Engineering</programme>
+        <yearOfStudy>3</yearOfStudy>
+        <email>james.daniel@example.com</email>
+        <phone>+255712345005</phone>
+        <courses>
+            <course code="SE301">Software Testing</course>
+            <course code="SE302">Software Design</course>
+            <course code="SE303">Requirements Engineering</course>
+        </courses>
+    </student>
+
+    <student regNumber="T24-03-006">
+        <firstName>Elizabeth</firstName>
+        <lastName>Samson</lastName>
+        <gender>Female</gender>
+        <programme>Bachelor of Science in Information Technology</programme>
+        <yearOfStudy>2</yearOfStudy>
+        <email>elizabeth.samson@example.com</email>
+        <phone>+255712345006</phone>
+        <courses>
+            <course code="IT201">Database Systems</course>
+            <course code="IT202">Computer Architecture</course>
+            <course code="IT203">Web Technologies</course>
+        </courses>
+    </student>
+
+    <student regNumber="T24-03-007">
+        <firstName>Robert</firstName>
+        <lastName>Joseph</lastName>
+        <gender>Male</gender>
+        <programme>Bachelor of Science in Computer Science</programme>
+        <yearOfStudy>4</yearOfStudy>
+        <email>robert.joseph@example.com</email>
+        <phone>+255712345007</phone>
+        <courses>
+            <course code="CS401">Artificial Intelligence</course>
+            <course code="CS402">Cloud Computing</course>
+            <course code="CS403">Research Methods</course>
+        </courses>
+    </student>
+
+    <student regNumber="T24-03-008">
+        <firstName>Sarah</firstName>
+        <lastName>Francis</lastName>
+        <gender>Female</gender>
+        <programme>Bachelor of Science in Software Engineering</programme>
+        <yearOfStudy>2</yearOfStudy>
+        <email>sarah.francis@example.com</email>
+        <phone>+255712345008</phone>
+        <courses>
+            <course code="SE201">Object Oriented Programming</course>
+            <course code="SE202">System Analysis and Design</course>
+            <course code="SE203">Operating Systems</course>
+        </courses>
+    </student>
+
+    <student regNumber="T24-03-009">
+        <firstName>Daniel</firstName>
+        <lastName>George</lastName>
+        <gender>Male</gender>
+        <programme>Bachelor of Science in Information Technology</programme>
+        <yearOfStudy>1</yearOfStudy>
+        <email>daniel.george@example.com</email>
+        <phone>+255712345009</phone>
+        <courses>
+            <course code="IT101">Introduction to ICT</course>
+            <course code="IT102">Computer Applications</course>
+            <course code="IT103">Introduction to Networking</course>
+        </courses>
+    </student>
+
+    <student regNumber="T24-03-010">
+        <firstName>Rebecca</firstName>
+        <lastName>Andrew</lastName>
+        <gender>Female</gender>
+        <programme>Bachelor of Science in Computer Science</programme>
+        <yearOfStudy>3</yearOfStudy>
+        <email>rebecca.andrew@example.com</email>
+        <phone>+255712345010</phone>
+        <courses>
+            <course code="CS301">Computer Graphics</course>
+            <course code="CS302">Data Communication</course>
+            <course code="CS303">Artificial Intelligence</course>
+        </courses>
+    </student>
+
+</students>
